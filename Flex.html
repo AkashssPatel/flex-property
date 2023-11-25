@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex with Media Query</title>
+    <style>
+        body{padding: 55px;}
+        p{font-size: 12px;;}
+        main{background-color: rgb(209, 238, 238);padding-left: 10px;}  
+        header{}
+         
+        
+        @media screen and (max-width:600px){
+           img{height:40%;width: 90%;} 
+           main{background-color:tan;}
+           div{flex-direction: column;}
+           h4{text-align: center;font-size:x-large;background-color: blueviolet;width: max-content;}
+           strong{font-size: 20px;}
+           p{font-size: 15px;font-family:Arial, Helvetica, sans-serif;}
+           ul{color: darkred;}
+           button{color: darkgreen;}
+        }
+        
+        div{display: flex;border: 2px solid black;}
+
+    </style>
+</head>
+<body>
+    <div>
+    <header>
+        <img src="/Images/Perfume1.jpg" width="265px" alt="">
+    </header>
+    <main>
+        <h4>PERFUME</h4>
+        <strong style="color:rgb(4, 44, 49);">Eau De Parfum | Musk</strong>
+        <p>An herbal, refreshing and earthy fragrance meant for the man of the earth.
+        </p>
+        <p >A rich fragrance like the EAU DE PARFUM | Musk is bound to keep you smelling like a dream all day long. Our no gas formula ensures that the musky charm follows you wherever you go. <br> 
+        <ul>FEATURES:<li>Long-lasting freshness</li>
+        <li>Premium quality </li> <li>Rich fragrance</li>
+    <li>Perfect for everyday use</li></ul> </p>
+        <h5>MRP <br> Rs.499 <sub style="text-decoration: line-through;color:gray" >1299</sub> <sub style="color: red;"> Save 62%</sub></h5>
+        <button type="submit">Add to cart</button>
+
+    </main>
+</div>
+</body>
+</html>
